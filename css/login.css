@@ -17,24 +17,67 @@ body {
     justify-content: center;
 }
 
-#b2 {
+#b1 {
+    text-align: center;
+    margin: auto;
+    background-color: #356ca2;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #356ca2
+}
+
+#b1:hover {
     background-color: #ffffff;
-     border: 0px;
-     border-radius: 5px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-left: 25px;
-     padding-right: 25px;
-     color: #1b498a;
-     transition-duration: 0.4s;
-     cursor: pointer;
-     border: 2px solid #1b498a
+    color: #356ca2;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#b1:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#b1:active {
+    border-style: solid;
+    border-width: 5px;
+    border-color: whitesmoke;
+}
+
+#b1:focus {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+#b2 {
+    position: relative;
+    right: 120px;
+    /* left: 120px; */
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    color: #356ca2;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 #b2:hover {
-    background-color: #1b498a;
-    color: #ffffff;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: transparent;
+    color: #356ca2;
+    transform: scale(1.5);
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
 }
 
 #b2:disabled {
@@ -48,7 +91,7 @@ body {
     border-color: whitesmoke;
 }
 
-#b2:focus {
+#b1:focus {
     opacity: 0.8;
     cursor: not-allowed;
 }
