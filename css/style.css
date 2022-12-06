@@ -1,23 +1,57 @@
+/* Setting the font for the entire page to sans-serif. */
 body {
   font-family: sans-serif;
 }
 
-/* Make content area fill the entire browser window */
-html,
-.fullscreen {
+
+/* It's the CSS for the navbar. */
+.nav {    
+  position: sticky;
+  top: 0;
+
+  height: 40px;
+  margin: -10px;
+
+  background-color: darkblue;
+  color: #ffffff;
+
   display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Center the content in the browser window */
-.container {
-  margin: auto;
-  text-align: center;
+/* Adding a margin to the left and right of the logout and location buttons. */
+.logout {
+  margin-left: 20px;
 }
 
-.title {
-  font-size: 3rem;
+.location {
+  display: flex;
+  margin-right: 20px;
 }
+
+.locationselect {
+  margin-left: 5px;
+}
+
+
+.cleaning-products {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  background-color: #4CAF50;
+
+  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-left: 80%;
+  padding-bottom: 30px;
+  border-radius: 8px;
+
+  margin-top: 15px;
+}
+
+
+
