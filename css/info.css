@@ -1,0 +1,87 @@
+/* Setting the font for the entire page to sans-serif. */
+body {
+    font-family: sans-serif;
+    background-color: #ECEFF4;
+  }
+  
+  
+  /* It's the CSS for the navbar. */
+  .nav {    
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    -webkit-box-shadow: 3px 3px 10px 3px #595959;
+    -moz-box-shadow: 3px 3px 10px 3px #595959;
+    box-shadow: 3px 3px 10px 3px #595959;
+    position: sticky;
+    top: 0;
+  
+    height: 80px;
+    margin: -10px;
+  
+  
+    background-color: #2196f3;
+    color: #ffffff;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Adding a margin to the left and right of the logout and location buttons. */
+  .logout {
+    margin-left: 20px;
+    background-color: #0f61ad; /* Dark blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .location {
+    display: flex;
+    margin-right: 30px;
+  }
+  
+  .locationselect {
+    margin-left: 5px;
+  }
+
+@media (min-width: 600px) {
+  body {
+    background: white;
+  }
+}
+
+  @media (max-width: 600px) {
+    body {
+      background: white;
+    }
+  }
+
+  .product-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: aqua;
+  }
+
+  .card {
+    margin-top: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    background-color: #0f61ad;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
