@@ -94,7 +94,7 @@ body {
 }
 
 .item {
-  background-color: #4CAF50;
+  background-color: #4C566A52  ;
   -webkit-box-shadow: 2px 2px 5px 2px #c3c3c3;
   -moz-box-shadow: 2px 2px 5px 2px #c3c3c3;
   box-shadow: 2px 2px 5px 2px #c3c3c3;
@@ -144,7 +144,3 @@ footer {
 
   margin-left: 20px;
 }
-
-
-
-
