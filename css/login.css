@@ -28,9 +28,8 @@ body {
     padding-left: 65px;
     padding-right: 65px;
     color: #ffffff;
-    transition-duration: 0.4s;
-    cursor: pointer;
     border: 2px solid #356ca2
+
 }
 
 #b1:hover {
