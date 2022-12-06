@@ -1,7 +1,6 @@
 /* Setting the font for the entire page to sans-serif. */
 body {
   font-family: sans-serif;
-  background-color: #ECEFF4;
 }
 
 
@@ -19,7 +18,7 @@ body {
   margin: -10px;
 
 
-  background-color: #2196f3;
+  background-color: darkblue;
   color: #ffffff;
 
   display: flex;
@@ -28,13 +27,41 @@ body {
 }
 
 /* Adding a margin to the left and right of the logout and location buttons. */
-.logout {
+#logout {
+  text-align: center;
+  margin: auto;
+  background-color: #356ca2;
+  border: 0px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ffffff;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #356ca2;
   margin-left: 20px;
 }
 
 .location {
   display: flex;
+  align-items: center;
   margin-right: 30px;
+}
+
+#locations {
+  text-align: center;
+  margin: auto;
+  background-color: #356ca2;
+  border: 0px;
+  border-radius: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+
 }
 
 .locationselect {
@@ -64,31 +91,21 @@ body {
 
   margin-top: 15px;
 }
-#b1{
-  border: 2px solid #2196f3;
-  color: #ffffff;
+
+#l-submit {
+  text-align: center;
   margin: auto;
-    background-color: #2196f3;
-
+  background-color: #356ca2;
+  border: 0px;
+  border-radius: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #356ca2
 }
-#b1:hover {
-  background-color: #ffffff;
-  color: #356ca2;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#b1:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-#b1:active {
-  border-style: solid;
-  border-width: 5px;
-  border-color: whitesmoke;
-}
-#b1:focus {
-  opacity: 0.8;
-  cursor: not-allowed;
-}
-
 
 
