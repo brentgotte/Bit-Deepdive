@@ -39,8 +39,6 @@ body {
   padding-right: 15px;
 
   color: #ffffff;
-  transition-duration: 0.4s;
-  cursor: pointer;
   border: 2px solid #356ca2;
   margin-left: 20px;
 }
@@ -84,8 +82,6 @@ body {
   padding-right: 10px;
   
   color: #ffffff;
-  transition-duration: 0.4s;
-  cursor: pointer;
   border: 2px solid #356ca2
 }
 
@@ -131,8 +127,21 @@ footer {
   
 }
 
-#copyright {
+#top {
+  text-align: center;
   margin: auto;
+  background-color: #356ca2;
+
+  border: 0px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  color: #ffffff;
+  border: 2px solid #356ca2;
+
   margin-left: 20px;
 }
 
