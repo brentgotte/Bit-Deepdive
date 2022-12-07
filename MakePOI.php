@@ -13,7 +13,7 @@
             <button id="logout">Log Out</button>
         </a>
         <div class="location">
-            <form action="">
+            <form action="" >
                 <select name="locations" id="locations">
                     <option value="h20">H20, Purmerend</option>
                     <option value="horizon">Horizon, Alkmaar</option>
@@ -25,7 +25,7 @@
     </div> 
     <br> <br> <br>
     <div class="form">
-    <form action=""></form>
+    <form action="queryhandler.php" method="post">
     <label for="NamePOI">Name of the POI:</label> <br>
     <input type="text" id="NamePOI" name="NamePOI" placeholder="Name of the POI"> <br> <br>
     <label for="Minutes">How many minutes to clean:</label> <br> 
@@ -34,5 +34,6 @@
     <textarea id="Textarea" name="Descriptionfield" rows="10" cols="40"></textarea>
    <a href="feed.html"><input type="submit" value="Add"></a> 
     </div>
+</form>
 </body>
 </html>
