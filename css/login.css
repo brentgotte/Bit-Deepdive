@@ -91,7 +91,12 @@ body {
     border-color: whitesmoke;
 }
 
-#b1:focus {
+#b2:focus {
     opacity: 0.8;
     cursor: not-allowed;
+}
+
+.footer {
+    position: relative;
+    top: 1000px;
 }
