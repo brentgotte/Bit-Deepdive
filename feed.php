@@ -19,14 +19,15 @@ try {
      throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 
-$sql = "SELECT * FROM Eleaning";
+$sql = "SELECT name FROM Eleaning";
+;
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
 
 // $product_id = $_GET['id'];
-$product = $stmt->fetch(PDO::FETCH_ASSOC);
-var_dump($product['name']);
+$product = $stmt->fetch();
+
 ?>
 
 <!DOCTYPE html>
@@ -119,73 +120,20 @@ var_dump($product['name']);
             </form>
         </div>
     </div>
-    <div class="cleaning-products">
-        <div class="product-1">
-            <a href="infoPage.html">
-                <button class="item"> <?= $product['name'] ?>          </button>
-                </a>
-            </div>
-        
-        <div class="product-2">
-            <a href="product.php?">
-                <button class="item"> <?= $product['name'] ?></button>
-            </a>
+    <div class="cleaning-product" >
+        <?php
+          while($product = $stmt->fetch(PDO::FETCH_ASSOC)) {
+              echo " 
+               <div class='item'> 
+               <button id='buttonproduct'> {$product['name']} </button>
+              </div>
+                ";
+
+          }
+          
+          ?>
         </div>
-        <div class="product-3">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-4">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-5">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-6">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-7">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-8">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-9">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-10">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-        <div class="product-11">
-            <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
-            </a>
-        </div>
-    </div>
+    
     <footer>
         <button onclick="topFunction()" id="top" title="top">Back to top</button>
        <a href="MakePOI.php"><button id="top" style="

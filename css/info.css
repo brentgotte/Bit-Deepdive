@@ -1,36 +1,37 @@
-/* Setting the font for the entire page to sans-serif. */
+@media only screen and (max-width: 600px) {
+  /* Setting the font for the entire page to sans-serif. */
 body {
     font-family: sans-serif;
     background-color: #ECEFF4;
+
   }
   
   /* It's the CSS for the navbar. */
-
-  .nav {    
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;
-    -webkit-box-shadow: 3px 3px 10px 3px #595959;
-    -moz-box-shadow: 3px 3px 10px 3px #595959;
-    box-shadow: 3px 3px 10px 3px #595959;
-    position: sticky;
-    top: 0;
-  
-    height: 80px;
-    margin: -10px;
-  
-  
-    background-color: #00004b;
-    color: #ffffff;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .nav img {
-   
-    max-width: 18%;
+  img.logo {
+    width: 199px;
 }
+.nav {    
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  -webkit-box-shadow: 3px 3px 10px 3px #595959;
+  -moz-box-shadow: 3px 3px 10px 3px #595959;
+  box-shadow: 3px 3px 10px 3px #595959;
+  position: sticky;
+  top: 0;
+
+  height: 80px;
+  
+
+
+  background-color: #00AEEF;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+
 .nav > img {
     display: block;
 }
@@ -50,7 +51,7 @@ img {
   /* Adding a margin to the left and right of the logout and location buttons. */
   .logo {
     margin-left: 40px;
-    background-color: #00004b;
+    background-color: #00AEEF;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -65,20 +66,6 @@ img {
     margin-right: 30px;
   }
   
-  .locationselect {
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    background-color: #356ca2;
-    border: 0px;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #ffffff;
-    border: 2px solid #356ca2;
-  }
 
   .product-info {
     margin-top: 30px;
@@ -104,47 +91,201 @@ img {
     padding: 2px 16px;
   }
 
-  .logout {
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    background-color: #356ca2;
-    border: 0px;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #ffffff;
-    border: 2px solid #356ca2;
-}
+  
 
-button {
-    appearance: auto;
-    writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: buttontext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    box-sizing: border-box;
-    background-color: buttonface;
-    margin: 0em;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
-}
+
 
 .video{
   display: flex;
   justify-content: center;
+}
+  #logout {
+    text-align: center;
+    margin: auto;
+    background-color: #77b800;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ffffff;
+    border: 2px solid #356ca2;
+    margin-right: 15px;
+}
+
+.locationselect {
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  background-color: #77b800;
+  border: 0px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ffffff;
+  border: 2px solid #356ca2;
+}
+
+img.logo {
+  width: 87px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+img.logo {
+  position: relative;
+  top: 8px;
+  width: 159px;
+}
+
+}
+
+@media only screen and (min-width: 350px) {
+  /* Setting the font for the entire page to sans-serif. */
+body {
+    font-family: sans-serif;
+    background-color: #ECEFF4;
+
+  }
+  
+  /* It's the CSS for the navbar. */
+  img.logo {
+    width: 199px;
+}
+.nav {    
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  -webkit-box-shadow: 3px 3px 10px 3px #595959;
+  -moz-box-shadow: 3px 3px 10px 3px #595959;
+  box-shadow: 3px 3px 10px 3px #595959;
+  position: sticky;
+  top: 0;
+
+  height: 80px;
+  margin: -10px;
+
+
+  background-color: #00AEEF;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+
+.nav > img {
+    display: block;
+}
+a img {
+    border: 0;
+}
+img {
+    margin-bottom: 1em;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
+  /* Adding a margin to the left and right of the logout and location buttons. */
+  .logo {
+    margin-left: 40px;
+    background-color: #00AEEF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .location {
+    display: flex;
+    margin-right: 30px;
+  }
+  
+
+  .product-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #77b800;
+  }
+
+  .card {
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    text-align: center;
+    background-color: #e9ecef;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  
+
+
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+  #logout {
+    text-align: center;
+    margin: auto;
+    background-color: #77b800;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ffffff;
+    border: 2px solid #356ca2;
+    margin-right: 15px;
+}
+
+.locationselect {
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  background-color: #77b800;
+  border: 0px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ffffff;
+  border: 2px solid #356ca2;
+}
+
+img.logo {
+  width: 87px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+img.logo {
+  position: relative;
+  top: 8px;
+  width: 159px;
+}
+
 }
