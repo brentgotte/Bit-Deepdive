@@ -1,43 +1,21 @@
-// function to open/close nav
-function toggleNav(){
-    // if nav is open, close it
-    if($("nav").is(":visible")){
-      $("nav").fadeOut();
-      $("button").removeClass("menu");
-    }
-    // if nav is closed, open it
-    else{
-      $("button").addClass("menu");
-      $("nav").fadeIn().css('display', 'flex');
-    }
-  }
-  
-  // when clicking + or ☰ button
-  $("button").click(function(){
-    // when clicking ☰ button, open nav
-    if($("header").hasClass("open")){
-      toggleNav();
-    }
-    // when clicking + button, open header
-    else{
-      $("header").addClass("open");
-    }
-  });
-  
-  // close nav
-  $("#nav-close").click(function(){
-    toggleNav();
-  });
-  
-  // scroll to sections
-  $("nav li").click(function(){
-    // get index of clicked li and select according section
-    var index = $(this).index();
-    var target = $("content section").eq(index);
-    
-    toggleNav();
-    
-    $('html,body').delay(300).animate({
-      scrollTop: target.offset().top
-    }, 500);
+$('.page').each(function(i,e){
+    $(this).click(function(event){
+      var x = event.pageX;
+      var y = event.pageY;
+      
+      var nextItem = i + 1;
+      if (nextItem >= $('.page').length){
+        nextItem = 0;
+      }
+      
+      $('.page:eq('+ nextItem +')').css('z-index', parseInt($(this).css('z-index')) + 1);
+      $('.page:eq('+ nextItem +')').css('clip-path', 'circle(0% at '+ x +'px '+ y +'px)');
+      
+      anime({
+        targets: $('.page')[nextItem],
+        update: function(anim) {
+          $('.page:eq('+ nextItem +')').css('clip-path', 'circle('+ (anim.progress*2) +'% at '+ x +'px '+ y +'px)');
+        }
+      });
+    });
   });
