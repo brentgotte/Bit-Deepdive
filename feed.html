@@ -5,6 +5,7 @@
     <link rel="apple-touch-icon" href="images/apple-icon-180.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta charset="UTF-8">
+    <script src="js/feed.js" defer></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -68,34 +69,34 @@
         media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="images/apple-splash-1136-640.jpg"
         media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <title>Document</title>
+    <title>E-learning | Feed</title>
     <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
     <div class="nav">
         <a href="index.html" class="logout">
-            <button>Log Out</button>
+            <button id="logout">Log Out</button>
         </a>
         <div class="location">
-            <label class="label-location" for="cars">Location: </label>
             <form action="">
                 <select name="locations" id="locations">
                     <option value="h20">H20, Purmerend</option>
                     <option value="horizon">Horizon, Alkmaar</option>
                     <option value="bit">bit, Amsterdam</option>
                 </select>
-                <input type="submit" value="Submit" class="b2">
+                <input type="submit" value="✓" id="l-submit">
             </form>
         </div>
     </div>
     <div class="cleaning-products">
         <div class="product-1">
-            <a href="product.php?">
+            <a href="infoPage.html">
                 <button class="item">
-                    >product< name </button>
+                    Koffiezet apparaat </button>
             </a>
         </div>
+        
         <div class="product-2">
             <a href="product.php?">
                 <button class="item">
@@ -117,32 +118,56 @@
         <div class="product-5">
             <a href="product.php?">
                 <button class="item">
-                    >product< name </button>
+                    >product< name  </button>
             </a>
         </div>
-        <div class="product-5">
+        <div class="product-6">
             <a href="product.php?">
                 <button class="item">
                     >product< name </button>
             </a>
         </div>
-        <div class="product-5">
+        <div class="product-7">
+            <a href="product.php?">
+                <button class="item">
+                    >product< name </button>
+            </a>
+        </div>
+        <div class="product-8">
+            <a href="product.php?">
+                <button class="item">
+                    >product< name </button>
+            </a>
+        </div>
+        <div class="product-9">
+            <a href="product.php?">
+                <button class="item">
+                    >product< name </button>
+            </a>
+        </div>
+        <div class="product-10">
+            <a href="product.php?">
+                <button class="item">
+                    >product< name </button>
+            </a>
+        </div>
+        <div class="product-11">
             <a href="product.php?">
                 <button class="item">
                     >product< name </button>
             </a>
         </div>
     </div>
-
-
-
-
+    <footer>
+        <button onclick="topFunction()" id="top" title="top">Back to top</button>
+       <a href="MakePOI.php"><button id="top" style="
+        margin-top: 11px;
+        margin-right: 24px;">Add POI</button></a> 
+    </footer>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js')
         }
     </script>
-
 </body>
-
 </html>

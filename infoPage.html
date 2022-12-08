@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/info.css">
   <link rel="apple-touch-startup-image" href="images/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="images/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 <link rel="apple-touch-startup-image" href="images/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -37,34 +37,49 @@
 <link rel="apple-touch-startup-image" href="images/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 <link rel="apple-touch-startup-image" href="images/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="images/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-<link rel="stylesheet" href="css/login.css">
   <title>Document</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <img src="images/achtergrond.jpg" alt="" id="background">
-    <h1 id="title">Welcome to E-Learning!</h1>
-    <br><br><br><br>
+
+    
+
+  <div class="nav">
+
+    <img class="logo" src="images/logo-whiter.webp" alt="logo">
+
     <div class="location">
-        <form action="">
-            <select name="locations" id="locations">
-                <option value="h20">H20, Purmerend</option>
-                <option value="horizon">Horizon College, Alkmaar</option>
-                <option value="bit">Bit-academy, Amsterdam</option>
-            </select> 
-            <br><br>
+
+              <a href="index.html" class="logout">
+                Log Out
+              </a>
+
             
-            <a href="feed.html" id="b1">Submit</a>
-            <br><br><br><br>
-            <input type="submit" value="Information" id="b2">
-        </form>
+            <select name="locaties" id="locaties" class="locationselect">
+            <option value="placeholder1">locatie1</option>
+            <option value="placeholder2">locatie2</option>
+            <option value="placeholder3">locatie3</option>
+            <option value="placeholder4">locatie4</option>
+            </select>
+        
     </div>
+</div>
+<div class="card">
+    <img class="machine" src="images/koffie-apparaat.jpg" alt="koffie-apparaat" style="width: 40%">
+    <div class="container">
+      <h4><b>Koffie apparaat</b></h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, error? Sunt eligendi eveniet corrupti 
+        consequatur velit suscipit, similique 
+        facilis labore architecto facere quibusdam rerum itaque corporis? Quisquam, fuga! Quibusdam, aut.
+      </p>
+    </div>
+  </div>
 
 
 
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js') 
+    navigator.serviceWorker.register('/sw.js')
   }
 </script>
 
