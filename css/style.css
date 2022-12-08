@@ -17,7 +17,7 @@ body {
   height: 80px;
   margin: -10px;
 
-  background-color: darkblue;
+  background-color: #00AEEF;
   color: #ffffff;
 
   display: flex;
@@ -29,7 +29,7 @@ body {
 #logout {
   text-align: center;
   margin: auto;
-  background-color: #356ca2;
+  background-color: white;
 
   border: 0px;
   border-radius: 5px;
@@ -38,7 +38,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  color: #ffffff;
+  color: #404040;
   border: 2px solid #356ca2;
   margin-left: 20px;
 }
@@ -52,7 +52,7 @@ body {
 #locations {
   text-align: center;
   margin: auto;
-  background-color: #356ca2;
+  background-color: white;
 
   border: 0px;
   border-radius: 4px;
@@ -61,7 +61,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 
-  color: #ffffff;
+  color: #404040;
 
 }
 
@@ -88,25 +88,30 @@ body {
 
 /* It's styling the cleaning products. */
 .cleaning-products {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
-  background-color: #4C566A52  ;
+  background-color: #4d4d4d  ;
   -webkit-box-shadow: 2px 2px 5px 2px #c3c3c3;
   -moz-box-shadow: 2px 2px 5px 2px #c3c3c3;
   box-shadow: 2px 2px 5px 2px #c3c3c3;
+  max-width: 300px;
+position: relative;
 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-top: 25px;
   padding-left: 80%;
+  padding-right: 100px;
   padding-bottom: 30px;
   border-radius: 8px;
 
   margin-top: 10px;
 }
+
 
 
 /* It's styling the footer. */
@@ -121,7 +126,7 @@ footer {
   height: 50px;
   margin: -10px;
   margin-top: 15px;
-  background-color: darkblue;
+  background-color: #00AEEF;
   color: white;
 
   
@@ -130,7 +135,7 @@ footer {
 #top {
   text-align: center;
   margin: auto;
-  background-color: #356ca2;
+  background-color: white;
 
   border: 0px;
   border-radius: 5px;
@@ -139,7 +144,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 
-  color: #ffffff;
+  color: #404040;
   border: 2px solid #356ca2;
 
   margin-left: 20px;
@@ -149,4 +154,14 @@ footer {
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+#buttonproduct{
+margin: auto;
+  background-color: #404040;
+  border: 0px;
+  border-radius: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #ffffff;
+
 }
