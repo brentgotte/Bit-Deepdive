@@ -32,7 +32,7 @@
     <input type="number" id="Minutes" name="Minutes" placeholder="Minutes"> <br> <br>
     <label for="Description">Description:</label> <br> 
     <textarea id="Textarea" name="Descriptionfield" rows="10" cols="40"></textarea>
-   <a href="feed.html"><input type="submit" value="Add"></a> 
+   <a href="queryhandler.php"><input type="submit" value="Add"></a> 
     </div>
 </form>
 </body>

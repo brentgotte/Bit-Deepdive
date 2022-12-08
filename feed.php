@@ -1,6 +1,36 @@
+<?php
+
+$host = "localhost";
+$db = "E-learning";
+$username = "root";
+$password = "root";
+$charset = "utf8mb4";
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+try {
+     $pdo = new PDO($dsn, $username, $password, $options);
+} catch (\PDOException $e) {
+     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+
+$sql = "SELECT * FROM Eleaning";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+
+// $product_id = $_GET['id'];
+$product = $stmt->fetch(PDO::FETCH_ASSOC);
+var_dump($product['name']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="apple-touch-icon" href="images/apple-icon-180.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -92,15 +122,13 @@
     <div class="cleaning-products">
         <div class="product-1">
             <a href="infoPage.html">
-                <button class="item">
-                    Koffiezet apparaat </button>
-            </a>
-        </div>
+                <button class="item"> <?= $product['name'] ?>          </button>
+                </a>
+            </div>
         
         <div class="product-2">
             <a href="product.php?">
-                <button class="item">
-                    >product< name </button>
+                <button class="item"> <?= $product['name'] ?></button>
             </a>
         </div>
         <div class="product-3">
@@ -118,7 +146,7 @@
         <div class="product-5">
             <a href="product.php?">
                 <button class="item">
-                    >product< name  </button>
+                    >product< name </button>
             </a>
         </div>
         <div class="product-6">
