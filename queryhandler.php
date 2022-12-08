@@ -39,10 +39,10 @@ $Descriptionfield = $_POST['Descriptionfield'];
 $Minutes = $_POST['Minutes'];
 
 
-$sql = "INSERT INTO Eleaning (name, minutes, Description) VALUES ('$NamePOI', '$Minutes', '$Descriptionfield')";
+$sql = "INSERT INTO Eleaning (name, Minutes, Description) VALUES ('$NamePOI', '$Minutes', '$Descriptionfield')";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
-header("Location: feed.html");
+header("Location: feed.php");
 ?>
 </body>
 </html>
