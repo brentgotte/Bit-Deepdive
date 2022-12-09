@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   /* Setting the font for the entire page to sans-serif. */
 body {
     font-family: sans-serif;
@@ -20,7 +20,6 @@ body {
   top: 0;
 
   height: 80px;
-  
 
 
   background-color: #00AEEF;
@@ -133,7 +132,7 @@ img.logo {
   width: 87px;
   position: relative;
   top: 10px;
-  right: 10px;
+  right: 0;
 }
 
 img.logo {
@@ -144,12 +143,12 @@ img.logo {
 
 }
 
-@media only screen and (min-width: 350px) {
+
   /* Setting the font for the entire page to sans-serif. */
 body {
     font-family: sans-serif;
     background-color: #ECEFF4;
-
+    width: 100%;
   }
   
   /* It's the CSS for the navbar. */
@@ -174,7 +173,7 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
   
 
@@ -279,13 +278,11 @@ img.logo {
   width: 87px;
   position: relative;
   top: 10px;
-  right: 10px;
+  right: -6px;
 }
 
 img.logo {
   position: relative;
   top: 8px;
   width: 159px;
-}
-
 }
