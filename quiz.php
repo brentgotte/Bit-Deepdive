@@ -31,7 +31,7 @@
             <div class="card">
                 <div class="row g-0">
                     <div class="col-5 col-sm-4">
-                    <a href=""> <img src="images/koffie-apparaat.jpg" class="img-fluid w-60" alt="card-horizontal-image"></a>
+                    <a href="quizkoffie.html"> <img src="images/koffie-apparaat.jpg" class="img-fluid w-60" alt="card-horizontal-image"></a>
     </div>
     <div class="col-7 col-sm-8">
       <div class="card-body">
