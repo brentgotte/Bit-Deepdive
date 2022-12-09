@@ -124,9 +124,11 @@ $product = $stmt->fetch();
         <?php
           while($product = $stmt->fetch(PDO::FETCH_ASSOC)) {
               echo " 
+             <a href='iframe.html'>
                <div class='item'> 
                <button id='buttonproduct'> {$product['name']} </button>
               </div>
+                </a>
                 ";
 
           }
