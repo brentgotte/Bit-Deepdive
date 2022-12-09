@@ -136,9 +136,11 @@ $product = $stmt->fetch();
     
     <footer>
         <button onclick="topFunction()" id="top" title="top">Back to top</button>
-       <a href="MakePOI.php"><button id="top" style="
+         <a href="quiz.php"> <button id="top" style="/*! margin: ; */margin-top: 11px;margin-right: 9rem;">Do quiz</button></a>
+               <a href="MakePOI.php"><button id="top" style="
         margin-top: 11px;
         margin-right: 24px;">Add POI</button></a> 
+
     </footer>
     <script>
         if ('serviceWorker' in navigator) {
